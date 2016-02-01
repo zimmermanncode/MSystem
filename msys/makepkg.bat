@@ -1,5 +1,5 @@
 @echo off
-REM CMD shell integration for MSYS2
+REM MSystem | CMD shell integration for MSYS2
 REM
 REM Copyright (C) 2015-2016 Stefan Zimmermann <zimmermann.code@gmail.com>
 REM

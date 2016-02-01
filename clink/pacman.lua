@@ -1,4 +1,4 @@
--- CMD shell integration for MSYS2
+-- MSystem | CMD shell integration for MSYS2
 --
 -- Copyright (C) 2015-2016 Stefan Zimmermann <zimmermann.code@gmail.com>
 --
