@@ -188,7 +188,7 @@ if not "%MSYS2_ROOT%" == "" (
 )
 
 REM try to find MSYS2 root directory in %PATH%
-for %%S in (msys2_shell.bat) do (
+for %%S in (msys2_shell.cmd) do (
     set "MSYS2_ROOT=%%~dp$PATH:S"
     if not "!MSYS2_ROOT!" == "" (
         goto :checkRoot
@@ -207,7 +207,7 @@ for %%D in ("%cmdRoot:~0,-1%") do (
 
 REM remove trailing \
 set "MSYS2_ROOT=%MSYS2_ROOT:~0,-1%"
-if not exist "%MSYS2_ROOT%\msys2_shell.bat" (
+if not exist "%MSYS2_ROOT%\msys2_shell.cmd" (
     echo This script is not properly installed.
     echo Should be in ^<MSYS2 root^>\cmd\
     exit /b 1
