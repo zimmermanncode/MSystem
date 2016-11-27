@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>msystem</id>
+    <title>MSystem</title>
+    <version>0.0.0</version>
+    <authors>userzimmermann</authors>
+    <owners>userzimmermann</owners>
+    <summary>CMD Shell integration for MSYS2</summary>
+    <description>
+    </description>
+    <projectUrl>https://github.com/ShellStudio/MSystem</projectUrl>
+    <packageSourceUrl>https://github.com/ShellStudio/MSystem/tree/master</packageSourceUrl>
+    <projectSourceUrl>https://github.com/ShellStudio/MSystem/tree/master</projectSourceUrl>
+    <docsUrl>https://github.com/ShellStudio/MSystem/blob/master/README.md</docsUrl>
+    <tags>msystem msys2 msys cygwin mingw w64 gnu linux unix posix arch pacman bash makepkg gcc</tags>
+    <copyright>Copyright (C) 2015-2016 Stefan Zimmermann</copyright>
+    <licenseUrl>https://github.com/ShellStudio/MSystem/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="msys2" />
+    </dependencies>
+    <releaseNotes>https://github.com/ShellStudio/MSystem/blob/master/CHANGES.md</releaseNotes>
+  </metadata>
+  <files>
+    <file src="*LICENSE" target="" />
+    <file src="*.bat" target="" />
+    <file src="msys\*.bat" target="msys" />
+    <file src="mingw32\*.bat" target="mingw32" />
+    <file src="mingw64\*.bat" target="mingw64" />
+    <file src="clink\*.lua" target="clink" />
+  </files>
+</package>
